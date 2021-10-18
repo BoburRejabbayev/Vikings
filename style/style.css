@@ -181,7 +181,7 @@ body {
 
 .haader-info p,
 .header-info-title {
-    color: var(--text);
+    color: white;
 }
 
 .header-info-title {
