@@ -1,0 +1,150 @@
+@media(prefers-color-scheme:dark) {
+    :root{
+        --body:#0E0E0E;
+        --text:#FFFFFF;
+    }
+    body{
+        background-color: var(--body);
+    }
+}
+
+@media(max-width:767px){
+    .nav-logo{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+
+    .header{
+        position: relative;
+        z-index: 0;
+    }
+
+    .haader-info{
+        position: relative;
+        z-index: 1;
+        margin-top: -20%;
+        background-color: #0E0E0E;
+        padding-bottom: 30px;
+    }
+
+    .header-info-title{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .navbar{
+        background-color: #212529;
+    }
+}
+@media(max-width:992px){
+    .hero-info{
+        margin-left: 0;
+    }
+
+    .hero-info-title{
+        text-align: center;
+    }
+    .hero-info p{
+        text-align: justify;
+    }
+    .season-item{
+        /* justify-content: center; */
+        margin: auto;
+        max-width: 350px;
+    }
+    .elements-right p{
+        text-align: justify;
+    }
+    .hero-info-title{
+        font-size: 60px;
+        line-height: 72px;
+    }
+    .season-nav-logo img{
+        width: 100px;
+        height: 40px;
+    }
+    .nav-link{
+        font-size: 20px;
+    }
+    .season1-info{
+        margin-bottom: -20%;
+    }
+}
+
+@media(max-width:767px){
+    .season-nav-link{
+        font-size: 25px;
+    }
+    .season1-info{
+        margin-bottom: -50%;
+    }
+    .season1-info-number{
+        font-size: 80px;
+        line-height: 54px;
+    }
+    .season1-info-text{
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .series-info p{
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media(max-width:700px){
+    .storm-text-1, .storm-text-2{
+        font-size: 60px;
+        line-height: 72px;
+    }
+    .storm i{
+        font-size: 40px;
+        width: 75px;
+        height: 75px;
+        margin-right: 10px;
+    }
+    .hero-info-title{
+        font-size: 50px;
+        line-height: 62px;
+    }
+    .haader-info{
+        margin-bottom: 30px;
+    }
+    .seasons{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .seasons-title{
+        margin-bottom: 30px;
+    }
+    .hero{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .hero-title{
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media(max-width:500px){
+    .storm-text-1, .storm-text-2{
+        font-size: 50px;
+        line-height: 62px;
+    }
+    .storm-text-2{
+        margin-left: 30px;
+    }
+
+    .hero-info-title{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .storm i{
+        font-size: 35px;
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+}

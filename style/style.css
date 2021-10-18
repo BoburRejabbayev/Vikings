@@ -1,0 +1,436 @@
+@import './fonts.css';
+@import './media.css';
+
+:root {
+    --rob: 'Roboto';
+    --text: #0E0E0E;
+    --title: #85CCDC;
+    --numbers: #600E09;
+    --body: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+body {
+    background-color: var(--body);
+}
+
+/* header start */
+
+.header {
+    background-image: url(../images/headerbg.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    background: linear-gradient(180deg, #0E0E0E 0%, rgba(17, 17, 17, 0.850295) 16.53%, rgba(32, 31, 33, 0) 100%);
+    transform: rotate(180deg);
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 20%;
+    background: linear-gradient(180deg, #0E0E0E 0%, rgba(17, 17, 17, 0.850295) 16.53%, rgba(32, 31, 33, 0) 100%);
+}
+
+/* .header__info{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+} */
+
+.logo {
+    margin: auto;
+    display: flex;
+    flex-grow: 1;
+    max-width: 880px;
+    width: 100%;
+    max-height: 321px;
+}
+
+.season1-info {
+    display: flex;
+    align-items: flex-start;
+    /* align-items: flex-end; */
+    column-gap: 30px;
+    background-color: #0E0E0E;
+    color: white;
+    padding: 40px;
+    text-align: justify;
+    /* width: 70%; */
+    margin: 0 auto;
+}
+
+/* .header::before{
+    top: 0;
+} */
+
+.nav-link {
+    font-family: var(--rob);
+    font-weight: 400;
+    display: block;
+    color: var(--text);
+    font-size: 25px;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.nav_link:hover {
+    color: var(--title);
+    /* border-bottom:  #85CCDC; */
+    /* border: var(--title); */
+    text-decoration: solid;
+}
+
+.navbar-toggler-icon i {
+    color: var(--text);
+    font-size: 30px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-logo {
+    display: none;
+}
+
+.season1-nav-logo {
+    display: block;
+}
+
+.nav-logo img {
+    width: 100px;
+    height: 36px;
+    margin-top: 5px;
+}
+
+.series-numder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.season1-info-text {
+    font-size: 36px;
+    line-height: 42px;
+    font-family: var(--rob);
+    font-weight: 700;
+    /* margin-top: -10px; */
+}
+
+.season1-info-number {
+    font-size: 98px;
+    font-family: var(--rob);
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.series-info{
+    color: white;
+    font-family: var(--rob);
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+/* header end */
+
+/* header-info start */
+
+.haader-info {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.haader-info p,
+.header-info-title {
+    color: var(--text);
+}
+
+.header-info-title {
+    font-family: var(--rob);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 100px;
+}
+
+.header-info-elements {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.elements-left {
+    display: flex;
+    flex-direction: column;
+    /* align-items: space-between; */
+    justify-content: space-between;
+    width: 20%;
+    /* height: 100%; */
+}
+
+.elements-right {
+    width: 60%;
+}
+
+/* header-info end */
+
+/* storm start */
+
+.storm {
+    background-image: url(../images/storm.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.storm-text-1,
+.storm-text-2 {
+    font-family: var(--rob);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 72px;
+    line-height: 84px;
+    color: var(--title);
+}
+
+.storm-text-2 {
+    margin-left: 200px;
+}
+
+.storm i {
+
+    font-size: 60px;
+    color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: var(--numbers);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.storm-text {
+    font-size: 18px;
+    line-height: 21px;
+    font-family: var(--rob);
+    font-weight: 400;
+    color: var(--text);
+}
+
+/* storm end */
+
+/* seaseons start */
+
+.seasons {
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.seasons-title {
+    font-size: 36px;
+    line-height: 42px;
+    font-family: var(--rob);
+    font-weight: 400;
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.season-number {
+    color: var(--numbers);
+    font-size: 96px;
+    line-height: 112px;
+    margin-bottom: -30px;
+    width: 100%;
+}
+
+.season-img {
+    position: relative;
+    z-index: 0;
+    max-width: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.season-img img {
+    width: 100%;
+}
+
+.season-item {
+    position: relative;
+    z-index: 0;
+}
+
+.season-img a {
+    position: absolute;
+    left: 25px;
+    top: 40%;
+    color: #fff;
+    /* max-width: 300px; */
+    width: 80%;
+    height: 65px;
+    background-color: #0E0E0E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    line-height: 42px;
+    font-family: var(--rob);
+    font-weight: 400;
+    transform: translateY(200px);
+    z-index: 1;
+    transition: .5s;
+    border-radius: 8px;
+}
+
+.season-img::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.431);
+    opacity: 0;
+    z-index: 0;
+    transition: .5s;
+}
+
+.season-img:hover::after {
+    opacity: 1;
+}
+
+.season-img:hover .season-link {
+    transform: scale(1);
+}
+
+/* seasons end */
+
+/* hero start */
+
+.hero {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.hero-title {
+    color: var(--text);
+    font-size: 36px;
+    line-height: 42px;
+    font-family: var(--rob);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.hero-left {
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+    left: 30px;
+}
+
+.hero-right {
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+    right: 30px;
+}
+
+
+.hero-images {
+    position: relative;
+    z-index: 0;
+}
+
+.hero-info {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-info-title {
+    color: var(--title);
+    font-size: 72px;
+    line-height: 84px;
+    font-family: var(--rob);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.hero-info p {
+    color: var(--text);
+    font-size: 18px;
+    line-height: 21px;
+    font-family: var(--rob);
+    font-weight: 400;
+}
+
+/* hero end */
+
+/* footer start */
+
+footer {
+    margin-top: 30px;
+}
+
+.footer-text {
+    color: var(--text);
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: var(--rob);
+    font-weight: 400;
+    /* margin-top: 30px; */
+}
+
+/* footer end */
