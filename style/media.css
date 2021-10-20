@@ -148,6 +148,11 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .carousel-control-next-icon img,
+.carousel-control-prev-icon img{
+    width: 25px;height: 20px;
+} 
     
 }
 

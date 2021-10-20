@@ -367,9 +367,20 @@ body {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon{
-    width: 0 !important;
-    height: 0 !important;
+    background: none;
+    opacity: 1;
 }
+
+/* .control-img{
+    width: 25px;
+} */
+
+.carousel-control-prev,
+.carousel-control-next{
+    opacity: 1;
+}
+
+
 
 .carusel-img1{
     width: 100%;
@@ -381,6 +392,8 @@ body {
 .carousel-control-prev-icon {
     padding: 0;
 }
+
+
 
 /* .carousel-inner{
     width: 350px;
@@ -405,25 +418,25 @@ body {
     margin-bottom: 100px;
 }
 
-.hero-left {
+/* .hero-left {
     position: absolute;
     top: 50%;
     z-index: 0;
     left: 30px;
-}
+} */
 
-.hero-right {
+/* .hero-right {
     position: absolute;
     top: 50%;
     z-index: 0;
     right: 30px;
-}
+} */
 
 
-.hero-images {
+/* .hero-images {
     position: relative;
     z-index: 0;
-}
+} */
 
 .hero-info {
     margin-left: 30px;
