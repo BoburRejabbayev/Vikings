@@ -365,6 +365,25 @@ body {
 
 /* hero start */
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.carusel-img{
+    width: 100%;
+    height: 450px ;
+}
+
+/* .carousel-inner{
+    width: 350px;
+} */
+/* 
+.carousel{
+    width: 350px;
+} */
+
 .hero {
     margin-top: 100px;
     margin-bottom: 100px;
