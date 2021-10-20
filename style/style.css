@@ -377,6 +377,11 @@ body {
     height: 100%;
 }
 
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    padding: 0;
+}
+
 /* .carousel-inner{
     width: 350px;
 } */
