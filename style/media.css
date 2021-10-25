@@ -24,14 +24,14 @@
     .header-info{
         position: relative;
         z-index: 1;
-        margin-top: -20%;
-        background-color: #0E0E0E;
         padding-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .header-info p,
     .header-info h2{
-        color: white !important;
+        color: #212529 !important;
     }
 
     .header-info-title{

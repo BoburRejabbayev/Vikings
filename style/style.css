@@ -9,19 +9,7 @@
     --body: white;
 }
 
-a {
-    text-decoration: none;
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
 
 body {
     background-color: var(--body);
@@ -76,6 +64,10 @@ body {
     max-width: 880px;
     width: 100%;
     max-height: 321px;
+}
+
+.navbar{
+    z-index: 100;
 }
 
 .season1-info {
@@ -299,11 +291,13 @@ body {
     line-height: 112px;
     margin-bottom: -30px;
     width: 100%;
+    position: relative;
+    z-index: -1;
 }
 
 .season-img {
     position: relative;
-    z-index: 0;
+    z-index: -1;
     max-width: 350px;
     width: 100%;
     overflow: hidden;
@@ -315,7 +309,7 @@ body {
 
 .season-item {
     position: relative;
-    z-index: 0;
+    z-index: -1;
 }
 
 .season-img a {
@@ -335,9 +329,10 @@ body {
     font-family: var(--rob);
     font-weight: 400;
     transform: translateY(200px);
-    z-index: 1;
+    z-index: 0;
     transition: .5s;
     border-radius: 8px;
+    text-decoration: none;
 }
 
 .season-img::after {
@@ -349,7 +344,7 @@ body {
     left: 0;
     background: rgba(0, 0, 0, 0.431);
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
     transition: .5s;
 }
 
