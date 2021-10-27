@@ -9,10 +9,16 @@
     --body: white;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 
 body {
+    position: relative;
     background-color: var(--body);
+    z-index: -5 !important;
 }
 
 /* header start */
@@ -273,6 +279,7 @@ body {
     margin-top: 100px;
     position: relative;
     margin-bottom: 100px;
+    z-index: -1;
 }
 
 .seasons-title {
@@ -297,7 +304,7 @@ body {
 
 .season-img {
     position: relative;
-    z-index: -1;
+    z-index: 0;
     max-width: 350px;
     width: 100%;
     overflow: hidden;
@@ -309,7 +316,7 @@ body {
 
 .season-item {
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 .season-img a {
@@ -344,16 +351,19 @@ body {
     left: 0;
     background: rgba(0, 0, 0, 0.431);
     opacity: 0;
-    z-index: -1;
+    z-index: 0;
     transition: .5s;
 }
 
 .season-img:hover::after {
     opacity: 1;
+    /* z-index: 100; */
 }
 
 .season-img:hover .season-link {
-    transform: scale(1);
+    /* transform: scale(1); */
+    transform: translateY(0);
+    z-index: 100;
 }
 
 /* seasons end */
